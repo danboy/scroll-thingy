@@ -5,7 +5,7 @@ A super simple library to make things happen when an element is scrolled into th
 viewport..
 
 example
-
+```javascript
   s = new ScrollyGoRound('ul.items li', function(el,inview){
     if(inview){
       $(el).removeClass('inview');
@@ -13,3 +13,4 @@ example
       $(el).addClass('inview');
     }
   });
+```
