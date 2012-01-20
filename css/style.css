@@ -263,11 +263,14 @@ ul.items{
 ul.items li{
   list-style: none;
   position: relative;
-  margin: 200px auto;
+  margin: 20px auto;
   height: 350px;
   width: 400px;
 }
-
+ul.items a{
+  margin: 100px 20px;
+  display: inline-block;
+}
 ul.items li h1{
   text-align: center;
   width: 300px;
@@ -280,6 +283,8 @@ ul.items li h1{
   z-index:1;
   -webkit-transform: skew(-25deg);
   -webkit-transition: all 1s linear;
+  transform: skew(-25deg);
+  transition: all 1s linear;
 }
 
 ul.items li.inview h1{
@@ -295,6 +300,9 @@ ul.items li.inview h1{
   -webkit-transform: skew(0deg);
   -webkit-transform: rotate(0deg);
   -webkit-transition: all 1.3s ease-out;
+  transform: skew(0deg);
+  transform: rotate(0deg);
+  transition: all 1.3s ease-out;
 }
 
 ul.items li.inview img{
@@ -310,6 +318,9 @@ ul.items li.inview img{
   -webkit-transform: skew(0deg);
   -webkit-transform: rotate(0deg);
   -webkit-transition: all 1s linear;
+   -moz-transform: skew(0deg);
+   -moz-transform: rotate(0deg);
+   -moz-transition: all 1s linear;
 }
 ul.items li img{
   border: 0px solid #DDD;
@@ -324,6 +335,12 @@ ul.items li img{
   -webkit-transform: skew(-25deg);
   -webkit-transform: rotate(25deg);
   -webkit-transition: all .4s linear;
+  transform: skew(-25deg);
+  transform: rotate(25deg);
+  transition: all .4s linear;
+  -moz-transform: skew(-25deg);
+  -moz-transform: rotate(25deg);
+  -moz-transition: all .4s linear;
 }
 
 ul.items li .description{
