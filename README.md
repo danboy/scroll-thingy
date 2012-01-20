@@ -5,6 +5,7 @@ A super simple library to make things happen when an element is scrolled into th
 viewport..
 
 example
+
 ```html
 <script>
   s = new ScrollyGoRound('ul.items li', function(el,inview){
