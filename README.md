@@ -6,6 +6,8 @@ viewport..
 
 example
 
+```html
+<script>
   s = new ScrollyGoRound('ul.items li', function(el,inview){
     if(inview){
       $(el).removeClass('inview');
@@ -13,3 +15,5 @@ example
       $(el).addClass('inview');
     }
   });
+</script>
+```
