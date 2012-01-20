@@ -34,13 +34,6 @@ ScrollyGoRound.prototype = {
   }
 };
 
-s = new ScrollyGoRound('ul.items li', function(el,inview){
-  if(inview){
-    $(el).removeClass('inview');
-  }else{
-    $(el).addClass('inview');
-  }
-});
 
 
 
